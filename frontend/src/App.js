@@ -28,7 +28,7 @@ function App() {
     setMessage("");
 
     try {
-      const res = await axios.post("https://medical-chatbot-gqtz.onrender.com/chat", { message });
+      const res = await axios.post("https://medical-chatbot-iupr.onrender.com/chat", { message });
       const botMessage = { text: res.data.response, sender: "bot" };
       setMessages((prev) => [...prev, botMessage]);
     } catch (error) {
